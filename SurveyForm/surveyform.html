@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            SURVEY FORM
+        </title>
+        <style>
+           body{
+            background-color:aquamarine;
+            text-align: center;
+
+           } 
+            form{
+                background-color: beige;
+                width: 80%;
+                padding:3%;
+                margin-left: 7%;
+                margin-right: 7%;
+                 }
+                
+
+        </style>
+    
+    </head>
+    <body>
+        <h1>Survey Form</h1>
+        <div>
+        <form>
+            Let us know how we can improve our Website<br><br>
+            <label>First Name:  </label><input type="text" name="fname"><br><br>
+            <label>Last Name:  </label><input type="text" name="lname"><br><br>
+            <label>Age:  </label>
+            <select>
+                <option> < 18</option>
+                 <option>19 - 25</option>
+                 <option> > 25 </option>
+            </select><br><br>
+            <label>Which option best decribes your current role?  </label>
+            <select>
+                <option> Student</option>
+                 <option>Employee</option>
+                 <option> Emmployer </option>
+                 <option> Teacher </option>
+            </select> <br><br>
+            <label>How likely is that you would recommend our Website to a friend?</label>
+            <input type="radio" id="radio" name="recommendation" value="Definitely">Definitely <br>
+            <input type="radio" id="radio" name="recommendation" value="May be">May be <br>
+            <input type="radio" id="radio" name="recommendation" value="Not sure">Not sure <br><br>
+            <label>What do you like more in our website?  </label>
+            <select>
+                <option> Select an option</option>
+                 <option>Idea</option>
+                 <option> Styling </option>
+                 <option> Content </option>
+            </select> <br><br>
+            <label>Things that should be improved in the future !<br> (Select all that apply)</label>
+            <input type="checkbox" id="checkbox" name="projects" value="FrontEnd">FrontEnd Projects<br>
+            <input type="checkbox" id="checkbox" name="projects" value="BackEnd">BackEnd Projects<br>
+            <input type="checkbox" id="checkbox" name="projects" value="Data Analysis">Data Analysis Projects<br><br><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    </body>
+</html>
