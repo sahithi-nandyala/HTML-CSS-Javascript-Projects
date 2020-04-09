@@ -1,9 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
 #product-overview {
-    background: #ff1b68;
+    background:url("freedom.jpeg"); /*specify path of the imagr inside url*/
+    width: 100%;
+    height:528px;
+    padding:10px;
 }
 
 .section-title {
@@ -14,7 +22,67 @@ body {
     color: white;
     font-family: 'Anton', sans-serif;
 }
+.main-header{
+    width: 100%;
+    background: #2ddf5c;
+    padding: 8px 16px; /* topBottom leftRight*/
+}
 
+.main-header > div {
+    display:inline-block;
+    vertical-align: middle;
+}
+.main-header__brand{
+    color:#0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+.main-nav{
+    display:inline-block;
+    text-align: right;
+    width:calc(100% - 77px); /* calc just takes a simple calc to make responsive*/
+    vertical-align: middle;
+}
+.main-nav__items{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+.main-nav__item{
+    display:inline-block;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+/* we can use classes on a tag for a litle bit more performance but as our app is small and has only one anchor tag, its okay to use tag selector */
+.main-nav__item a {
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 5px;
+}
+.main-nav__item a:hover {
+    color: #01250b;
+    border-bottom: 5px solid 
+}
+.main-nav__item a:active {
+    color: white;
+    border-bottom: 5px solid;
+}
+
+/*.main-nav__item a:hover, .main-nav__item a:active{
+}*/
+
+.main-nav__item--cta a{
+    color:white;
+    background:red;
+    border-radius: 3px;
+}
+.main-nav__item--cta a:hover,.main-nav__item--cta a:active{
+border:none;
+background:white;
+color:red;
+}
 /* h1 {
     font-family: sans-serif;
 } */
