@@ -1,47 +1,141 @@
 *{
     box-sizing: border-box;
 }
-
-
-body {
-    font-family: 'Montserrat', sans-serif;
+body{
+    font-family: 'Comic Neue', cursive;
 }
-
-#product-overview {
-    background:url("freedom.jpeg"); /*specify path of the imagr inside url*/
+#product-overview{
+    background:url("freedom.jpeg"); /* specify path of the image inside the url parameter */
     width: 100%;
     height:528px;
     padding:10px;
 }
 
-.section-title {
-    color: #2ddf5c;
+/* Changing color of text and font family */
+h1{
+    color: white;
+    /* font-family: sans-serif; */
+    font-family: inherit;
 }
 
-#product-overview h1 {
+.section-title{
+    color:#2ddf5c;
+    text-align:center;
+}
+.plan{
+    background: #d5ffdc;
+    text-align:center;
+    padding: 16px;
+    margin: 8px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+.plan--highlighted{
+    background: green;
     color: white;
-    font-family: 'Anton', sans-serif;
+    box-shadow : 2px 2px 2px 2px grey;
+    border-radius: 5px;
+}
+.plan__annotation{
+    background: white;
+    color: green;
+    padding: 5px;
+    box-shadow: 2px 2px 2px 2px grey;
+    border-radius: 5px;
+}
+.plan__title{
+    color:green;
+}
+.plan__price{
+    color: gray;
+}
+.plan--highlighted .plan__title{
+    color: white;
+}
+.plan--highlighted .plan__price{
+    color: rgb(0,0,0.5);
+}
+.plan__features{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+.plan__feature{
+    margin:6px 0;
+}
+.button{
+    background: rgb(13, 71, 13);
+    color:white;
+    font-family: inherit;
+    padding:8px;
+    border: 1.5px solid rgb(13, 71, 13);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.button:hover,
+.button:active{
+    background: white;
+    color: rgb(13, 71, 13);
+}
+.button:focus{
+    outline: none;
+}
+#key-features{
+    background: red;
+    padding:4px;
+    margin-top:8px;
+}
+#key-features .section-title{
+    color: white;
+}
+.key-features__list{
+ list-style-type: none;
+ margin:0;
+ padding:0;
+ text-align: center;
+ vertical-align: middle;
+}
+.key-feature{
+    display:inline-block;
+    width:30%;
+    vertical-align: top;
+}
+.key-feature__image{
+    background: rgb(228, 142, 142);
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin: auto;
+    border:2px solid gray;
+}
+.key-feature__description{
+    text-align: center;
+    font-weight: bold;
+    color:white;
+    font-size:20px;
+
 }
 .main-header{
-    width: 100%;
+    width: 100%; 
     background: #2ddf5c;
-    padding: 8px 16px; /* topBottom leftRight*/
+    padding: 8px 16px; /* topbottom leftright  */
 }
-
-.main-header > div {
+.main-header > div{
     display:inline-block;
     vertical-align: middle;
 }
 .main-header__brand{
-    color:#0e4f1f;
     text-decoration: none;
-    font-weight: bold;
+    color:#0e4f1f;
+    font-weight:bold;
     font-size: 22px;
 }
 .main-nav{
     display:inline-block;
-    text-align: right;
-    width:calc(100% - 77px); /* calc just takes a simple calc to make responsive*/
+    text-align:right;
+    width: calc(100% - 61px); /* calc just takes a simple calc */
     vertical-align: middle;
 }
 .main-nav__items{
@@ -51,38 +145,34 @@ body {
 }
 .main-nav__item{
     display:inline-block;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin: 0 16px;
 }
-/* we can use classes on a tag for a litle bit more performance but as our app is small and has only one anchor tag, its okay to use tag selector */
-.main-nav__item a {
-    text-decoration: none;
-    color: #0e4f1f;
-    font-weight: bold;
-    padding: 5px;
-}
-.main-nav__item a:hover {
-    color: #01250b;
-    border-bottom: 5px solid 
-}
-.main-nav__item a:active {
-    color: white;
-    border-bottom: 5px solid;
+/* we can specify classes on a tag for a little bit more 
+performance but as our app is small and has only one anchor tag,
+it's okay to use tag selector */
+.main-nav__item a{
+  text-decoration: none;
+  color:#0e4f1f;
+  font-weight: bold;
+  padding: 5px;
 }
 
-/*.main-nav__item a:hover, .main-nav__item a:active{
-}*/
-
-.main-nav__item--cta a{
+.main-nav__item a:hover,
+.main-nav__item a:active{
     color:white;
-    background:red;
-    border-radius: 3px;
+    border-bottom: 5px solid white;
 }
-.main-nav__item--cta a:hover,.main-nav__item--cta a:active{
-border:none;
-background:white;
-color:red;
+.main-nav__item--cta a{
+  color: white;
+  background:red;
+  border-radius:5px;
 }
-/* h1 {
-    font-family: sans-serif;
-} */
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active{
+  border:none;
+  background: white;
+  color:red;
+
+}
+
+
