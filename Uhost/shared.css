@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Comic Neue', cursive;
+}
+.main-header{
+    width: 100%; 
+    background: #2ddf5c;
+    padding: 8px 16px; /* topbottom leftright  */
+}
+.main-header > div{
+    display:inline-block;
+    vertical-align: middle;
+}
+.main-header__brand{
+    text-decoration: none;
+    color:#0e4f1f;
+    font-weight:bold;
+    font-size: 22px;
+}
+.main-nav{
+    display:inline-block;
+    text-align:right;
+    width: calc(100% - 61px); /* calc just takes a simple calc */
+    vertical-align: middle;
+}
+.main-nav__items{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+.main-nav__item{
+    display:inline-block;
+    margin: 0 16px;
+}
+/* we can specify classes on a tag for a little bit more 
+performance but as our app is small and has only one anchor tag,
+it's okay to use tag selector */
+.main-nav__item a{
+  text-decoration: none;
+  color:#0e4f1f;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active{
+    color:white;
+    border-bottom: 5px solid white;
+}
+.main-nav__item--cta a{
+  color: white;
+  background:red;
+  border-radius:5px;
+}
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active{
+  border:none;
+  background: white;
+  color:red;
+
+}
+.main-footer{
+    background:black;
+    padding: 32px;
+    margin-top: 48px;
+}
+.main-footer__links{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    text-align: center;
+}
+.main-footer__link{
+    display: inline-block;
+    margin:0px 16px;
+}
+.main-footer__link a{
+    text-decoration: none;
+    color: white;
+}
+.main-footer__link a:hover,
+.main-footer__link a:active{
+    color: gray;
+}
+
+.button{
+    background: rgb(13, 71, 13);
+    color:white;
+    font-family: inherit;
+    padding:8px;
+    border: 1.5px solid rgb(13, 71, 13);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.button:hover,
+.button:active{
+    background: white;
+    color: rgb(13, 71, 13);
+}
+.button:focus{
+    outline: none;
+}

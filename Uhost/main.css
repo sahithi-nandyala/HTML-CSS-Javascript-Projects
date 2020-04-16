@@ -1,9 +1,4 @@
-*{
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Comic Neue', cursive;
-}
+
 #product-overview{
     background:url("freedom.jpeg"); /* specify path of the image inside the url parameter */
     width: 100%;
@@ -30,6 +25,11 @@ h1{
     display: inline-block;
     width: 30%;
     vertical-align: middle;
+}
+.plans__list{
+    width: 80%;
+    margin:auto;
+    text-align: center;
 }
 .plan--highlighted{
     background: green;
@@ -64,24 +64,7 @@ h1{
 .plan__feature{
     margin:6px 0;
 }
-.button{
-    background: rgb(13, 71, 13);
-    color:white;
-    font-family: inherit;
-    padding:8px;
-    border: 1.5px solid rgb(13, 71, 13);
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-.button:hover,
-.button:active{
-    background: white;
-    color: rgb(13, 71, 13);
-}
-.button:focus{
-    outline: none;
-}
+
 #key-features{
     background: red;
     padding:4px;
@@ -117,62 +100,4 @@ h1{
     font-size:20px;
 
 }
-.main-header{
-    width: 100%; 
-    background: #2ddf5c;
-    padding: 8px 16px; /* topbottom leftright  */
-}
-.main-header > div{
-    display:inline-block;
-    vertical-align: middle;
-}
-.main-header__brand{
-    text-decoration: none;
-    color:#0e4f1f;
-    font-weight:bold;
-    font-size: 22px;
-}
-.main-nav{
-    display:inline-block;
-    text-align:right;
-    width: calc(100% - 61px); /* calc just takes a simple calc */
-    vertical-align: middle;
-}
-.main-nav__items{
-    margin:0;
-    padding:0;
-    list-style-type: none;
-}
-.main-nav__item{
-    display:inline-block;
-    margin: 0 16px;
-}
-/* we can specify classes on a tag for a little bit more 
-performance but as our app is small and has only one anchor tag,
-it's okay to use tag selector */
-.main-nav__item a{
-  text-decoration: none;
-  color:#0e4f1f;
-  font-weight: bold;
-  padding: 5px;
-}
-
-.main-nav__item a:hover,
-.main-nav__item a:active{
-    color:white;
-    border-bottom: 5px solid white;
-}
-.main-nav__item--cta a{
-  color: white;
-  background:red;
-  border-radius:5px;
-}
-.main-nav__item--cta a:hover,
-.main-nav__item--cta a:active{
-  border:none;
-  background: white;
-  color:red;
-
-}
-
 
