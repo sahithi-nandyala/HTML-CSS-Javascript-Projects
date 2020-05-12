@@ -1,0 +1,36 @@
+.nav-bar{
+    background-color: slateblue;
+    vertical-align: middle;
+    text-align: center;
+}
+.nav-bar__items{
+    padding:0;
+    margin:0;
+    padding: 5px;
+}
+.nav-bar__item{
+    display:inline-block;   
+}
+.nav-bar__item a{
+    text-decoration: none;
+    color: white;
+    padding:5px;
+    border: 3px black;
+}
+
+.nav-bar__item a:hover{
+    /*
+    set boder-radius, background-color, color
+    */
+    border-radius: 7%;
+    background-color: rgb(87, 48, 75);
+
+
+}
+
+.nav-bar__item a:active{
+    background-color: rgb(73, 65, 71);
+}
+
+/* border set chesi undaa ah nav list item ki??*/
+/* ,ari border set cheyyaliga....*/
